@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/color.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		<script src="../js/startload.js"></script>
+	</head>
+	<body>
+		<!-- 主界面菜单同时移动 -->
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable">
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- 菜单容器 -->
+				<aside class="mui-off-canvas-left lemon-color" id="offCanvasSide">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!-- 菜单具体展示内容 -->
+							<ul class="mui-table-view" style="margin-top: 15%;">
+								<li class="mui-table-view-cell pohe-color">
+									<a class="mui-navigate-right" id="whitenotes">
+										写笔记
+									</a>
+								</li>
+								<li class="mui-table-view-cell pink-color" id="settings">管理计划
+									<span class="mui-badge mui-badge-primary" id="count_ids">计划数获取失败，请刷新</span>
+								</li>
+							</ul>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell whire-color" style="margin-top: 10%;">以下为计划信息查看</li>
+								<li class="mui-table-view-cell cell-color ">小计划总数
+									<span class="mui-badge mui-badge-purple" id="total_plan">计划数获取失败，请刷新</span>
+								</li>
+								<li class="mui-table-view-cell cell-color">已完成的计划总数
+									<span class=" mui-badge mui-badge-green" id="total_finish">计划数获取失败，请刷新</span>
+								</li>
+								<li class="mui-table-view-cell cell-color">未完成的计划总数
+									<span class="mui-badge mui-badge-danger" id="total_without">计划数获取失败，请刷新</span>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</aside>
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+					<h1 class="mui-title">人生计时器-主页</h1>
+				</header>
+				<!-- 主页面内容容器 -->
+				<div class="mui-content mui-scroll-wrapper blue-color">
+					<div class="mui-scroll">
+						<!-- 主页面丢这儿 -->
+						<div id="cardboxs">
+							<!-- cards: -->
+							<div class="mui-card" style="margin-bottom: 5%;">
+								<!--页眉，放置标题-->
+								<div class="mui-card-header">
+									<h1 class="mui-title" style="color: darkorange;">数据获取失败，请刷新</h1>
+								</div>
+								<!--内容区-->
+								<div class="mui-card-content">
+									<ul class="mui-table-view">
+										<div class="mui-table-view-cell" style="width: 50%;float: left;">总任务个数
+											<span class="mui-badge mui-badge-primary">数据获取失败</span>
+										</div>
+										<div class="mui-table-view-cell" style="width: 50%;float: left;">已完成任务个数
+											<span class=" mui-badge mui-badge-success">数据获取失败</span>
+										</div>
+										<div class="mui-table-view-cell" style="width: 50%;float: left;">剩余时间
+											<span class=" mui-badge mui-badge-danger">数据获取失败</span>
+										</div>
+										<div class="mui-table-view-cell" style="width: 50%;float: left;">
+											任务完成时间&emsp;<span style="color: coral;">数据获取失败</span>
+										</div>
+									</ul>
+									<div class="mui-card-footer">
+										"时间最不偏私，给任何人都是二十四小时；时间也最偏私，给任何人都不是二十四小时。——赫胥黎"
+									</div>
+								</div>
+								<!--页脚，放置补充信息或支持的操作-->
+								<div class="mui-card-footer">
+									<h1 class="mui-title" style="color: darkcyan;">下一个任务：数据获取失败，请刷新</h1>
+								</div>
+							</div>
+						</div>
+						<button type="button" id="refreshbutton" data-loading-icon="mui-spinner mui-spinner-green"
+							class="mui-btn mui-btn-primary" style="margin-left: 40%;margin-top: 10%;">刷新计划表</button>
+					</div>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script src="../js/index.js"></script>
+		<script>
+			fresh();
+		</script>
+	</body>
+</html>

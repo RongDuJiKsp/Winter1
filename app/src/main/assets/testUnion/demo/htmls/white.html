@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.js"></script>
+		<link href="../css/mui.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		<script src="../js/my-onload.js"></script>
+		<script src="../js/jQ.js"></script>
+		<style>
+			.null {}
+		</style>
+		<link rel="stylesheet" href="../css/color.css">
+	</head>
+	<body class="greenyellow-color">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">写下你那长远的目标</h1>
+		</header>
+		<div class="mui-content ">
+			<form id=" userwhite" class="mui-input-group">
+				<div class="mui-input-row">
+					<input type="text" placeholder="标题或摘要" name="titles">
+				</div>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">以文字的方式填写日期</a>
+						<div class="mui-collapse-content">
+							<div class="mui-input-row">
+								<span style="margin-left: 5%;">终极目标日期：</span>
+								<input name="year" type="text" style="width: 15%;margin-left: 5%;"
+									placeholder="2023" />年
+								<input name="month" type="text" style="width: 12%;margin-left: 5%;" placeholder="01" />月
+								<input name="day" style="width: 12%;margin-left: 5%;" placeholder="01" />日
+							</div>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">以选择的方式输入日期</a>
+						<div class="mui-collapse-content">
+							<input type="date" name="indate">
+						</div>
+					</li>
+				</ul>
+				<div class="mui-input-row" style="height: 40%;">
+					<textarea name="usertext" cols="30" rows="6" placeholder="写下你的目标的详细描述吧"></textarea>
+				</div>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-collapse">
+						<!-- 上面的li小计划折叠框 -->
+						<a class="mui-navigate-right" href="#">小计划<span style="margin-left: 40%;"
+								id="cntofjh"></span></a>
+						<div class="mui-collapse-content">
+							<div id="running_form">
+								<div class="mui-input-row" id="plan1" style="display: none;">
+									<input type="text" placeholder="这是你第1个计划" name="plan1">
+								</div>
+								<div class="mui-input-row" id="plan2" style="display: none;">
+									<input type="text" placeholder="这是你第2个计划" name="plan2">
+								</div>
+								<div class="mui-input-row" id="plan3" style="display: none;">
+									<input type="text" placeholder="这是你第3个计划" name="plan3">
+								</div>
+								<div class="mui-input-row" id="plan4" style="display: none;">
+									<input type="text" placeholder="这是你第4个计划" name="plan4">
+								</div>
+								<div class="mui-input-row" id="plan5" style="display: none;">
+									<input type="text" placeholder="这是你第5个计划" name="plan5">
+								</div>
+								<div class="mui-input-row" id="plan6" style="display: none;">
+									<input type="text" placeholder="这是你第6个计划" name="plan6">
+								</div>
+								<div class="mui-input-row" id="plan7" style="display: none;">
+									<input type="text" placeholder="这是你第7个计划" name="plan7">
+								</div>
+								<div class="mui-input-row" id="plan8" style="display: none;">
+									<input type="text" placeholder="这是你第8个计划" name="plan8">
+								</div>
+								<div class="mui-input-row" id="plan9" style="display: none;">
+									<input type="text" placeholder="这是你第9个计划" name="plan9">
+								</div>
+								<div class="mui-input-row" id="plan10" style="display: none;">
+									<input type="text" placeholder="这是你第10个计划" name="plan10">
+								</div>
+								<div class="mui-input-row" id="plan11" style="display: none;">
+									<input type="text" placeholder="这是你第11个计划" name="plan11">
+								</div>
+								<div class="mui-input-row" id="plan12" style="display: none;">
+									<input type="text" placeholder="这是你第12个计划" name="plan12">
+								</div>
+								<div class="mui-input-row" id="plan13" style="display: none;">
+									<input type="text" placeholder="这是你第13个计划" name="plan13">
+								</div>
+								<div class="mui-input-row" id="plan14" style="display: none;">
+									<input type="text" placeholder="这是你第14个计划" name="plan14">
+								</div>
+								<div class="mui-input-row" id="plan15" style="display: none;">
+									<input type="text" placeholder="这是你第15个计划" name="plan15">
+								</div>
+								<div class="mui-input-row" id="plan16" style="display: none;">
+									<input type="text" placeholder="这是你第16个计划" name="plan16">
+								</div>
+								<div class="mui-input-row" id="plan17" style="display: none;">
+									<input type="text" placeholder="这是你第17个计划" name="plan17">
+								</div>
+								<div class="mui-input-row" id="plan18" style="display: none;">
+									<input type="text" placeholder="这是你第18个计划" name="plan18">
+								</div>
+								<div class="mui-input-row" id="plan19" style="display: none;">
+									<input type="text" placeholder="这是你第19个计划" name="plan19">
+								</div>
+								<div class="mui-input-row" id="plan20" style="display: none;">
+									<input type="text" placeholder="这是你第20个计划" name="plan20">
+								</div>
+								<div class="mui-input-row" id="plan21" style="display: none;">
+									<input type="text" placeholder="这是你第21个计划" name="plan21">
+								</div>
+								<div class="mui-input-row" id="plan22" style="display: none;">
+									<input type="text" placeholder="这是你第22个计划" name="plan22">
+								</div>
+								<div class="mui-input-row" id="plan23" style="display: none;">
+									<input type="text" placeholder="这是你第23个计划" name="plan23">
+								</div>
+								<div class="mui-input-row" id="plan24" style="display: none;">
+									<input type="text" placeholder="这是你第24个计划" name="plan24">
+								</div>
+								<div class="mui-input-row" id="plan25" style="display: none;">
+									<input type="text" placeholder="这是你第25个计划" name="plan25">
+								</div>
+								<div class="mui-input-row" id="plan26" style="display: none;">
+									<input type="text" placeholder="这是你第26个计划" name="plan26">
+								</div>
+								<div class="mui-input-row" id="plan27" style="display: none;">
+									<input type="text" placeholder="这是你第27个计划" name="plan27">
+								</div>
+								<div class="mui-input-row" id="plan28" style="display: none;">
+									<input type="text" placeholder="这是你第28个计划" name="plan28">
+								</div>
+								<div class="mui-input-row" id="plan29" style="display: none;">
+									<input type="text" placeholder="这是你第29个计划" name="plan29">
+								</div>
+								<div class="mui-input-row" id="plan30" style="display: none;">
+									<input type="text" placeholder="这是你第30个计划" name="plan30">
+								</div>
+							</div>
+							<span id="buttoncontain">
+								<button type="button" id="rubutton" class="mui-btn mui-btn-primary">创建一个新计划</button>
+							</span>
+							<span id="buttoncontain-delete">
+								<button type="button" id="rubutton-delete"
+									class="mui-btn mui-btn-warning">删除一个新计划</button>
+							</span>
+						</div>
+					</li>
+				</ul>
+				<div class="mui-input-row">
+					<input type="text" placeholder="写出想对自己说的话吧" name="usersaying">
+				</div>
+			</form>
+			<div style="background-color: #f9f047;">
+				<button type=" button" id="submitbutton" data-loading-icon="mui-spinner mui-spinner-custom"
+					class="mui-btn mui-btn-primary" style="margin-left: 40%;margin-top: 15%;">确认提交</button>
+			</div>
+
+		</div>
+	</body>
+	<script src="../js/white.js"></script>
+</html>
